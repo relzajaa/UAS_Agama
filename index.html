@@ -1,0 +1,633 @@
+"<!DOCTYPE html>
+<html lang=\"id\">
+<head>
+  <meta charset=\"UTF-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+  <meta name=\"description\" content=\"Panduan lengkap Wudu dan Tayammum berdasarkan Al-Qur'an dan Hadits Sahih. Pelajari pengertian, dalil, rukun, sunnah, tata cara, dan pembatalnya.\" />
+  <title>Panduan Wudu & Tayammum — Bersuci dalam Islam</title>
+
+  <!-- Google Fonts: Amiri (Arabic) + Manrope (Latin) -->
+  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+  <link href=\"https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">
+
+  <!-- Font Awesome for icons -->
+  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" />
+
+  <link rel=\"stylesheet\" href=\"style.css\" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class=\"navbar\" id=\"navbar\">
+    <div class=\"container nav-inner\">
+      <a href=\"#hero\" class=\"brand\" aria-label=\"Beranda\">
+        <span class=\"brand-icon\"><i class=\"fa-solid fa-droplet\"></i></span>
+        <span class=\"brand-text\">Thaharah<span class=\"dot\">.</span></span>
+      </a>
+
+      <nav class=\"nav-links\" id=\"navLinks\" aria-label=\"Navigasi utama\">
+        <a href=\"#hero\">Beranda</a>
+        <a href=\"#wudu\">Wudu</a>
+        <a href=\"#tayammum\">Tayammum</a>
+        <a href=\"#comparison\">Perbandingan</a>
+        <a href=\"#faq\">FAQ</a>
+      </nav>
+
+      <button class=\"hamburger\" id=\"hamburger\" aria-label=\"Buka menu\" aria-expanded=\"false\">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id=\"hero\" class=\"hero\">
+    <div class=\"hero-bg\" aria-hidden=\"true\"></div>
+    <div class=\"container hero-grid\">
+      <div class=\"hero-text reveal\">
+        <span class=\"eyebrow\"><i class=\"fa-solid fa-mosque\"></i> Panduan Bersuci dalam Islam</span>
+        <h1>
+          Wudu &amp; Tayammum:<br/>
+          <span class=\"accent\">Kunci Diterimanya Ibadah</span>
+        </h1>
+        <p class=\"lead\">
+          Pelajari tata cara bersuci secara lengkap dan benar — mulai dari pengertian,
+          dalil dari <em>Al-Qur'an</em> dan <em>Hadits Sahih</em>, rukun, sunnah,
+          hingga hal-hal yang membatalkannya.
+        </p>
+        <p class=\"arabic ayah\">وَإِنْ كُنْتُمْ جُنُبًا فَاطَّهَّرُوا</p>
+        <p class=\"ayah-tr\">\"Dan jika kamu junub, maka mandilah.\" (QS. Al-Ma'idah: 6)</p>
+
+        <div class=\"hero-cta\">
+          <a href=\"#wudu\" class=\"btn btn-primary\">
+            <i class=\"fa-solid fa-book-open-reader\"></i> Mulai Belajar
+          </a>
+          <a href=\"#comparison\" class=\"btn btn-ghost\">
+            <i class=\"fa-solid fa-scale-balanced\"></i> Lihat Perbandingan
+          </a>
+        </div>
+
+        <div class=\"hero-stats\">
+          <div><strong>2</strong><span>Cara Bersuci</span></div>
+          <div><strong>6</strong><span>Rukun Wudu</span></div>
+          <div><strong>4</strong><span>Rukun Tayammum</span></div>
+        </div>
+      </div>
+
+      <div class=\"hero-visual reveal\">
+        <img
+          src=\"https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=900&q=80\"
+          alt=\"Air mengalir, simbol kesucian dalam Islam\"
+          loading=\"lazy\"
+        />
+        <div class=\"floating-card card-1\">
+          <i class=\"fa-solid fa-droplet\"></i>
+          <div>
+            <strong>Wudu</strong>
+            <span>Dengan Air Suci</span>
+          </div>
+        </div>
+        <div class=\"floating-card card-2\">
+          <i class=\"fa-solid fa-mountain-sun\"></i>
+          <div>
+            <strong>Tayammum</strong>
+            <span>Dengan Debu Suci</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WUDU SECTION ============ -->
+  <section id=\"wudu\" class=\"section\">
+    <div class=\"container\">
+      <div class=\"section-head reveal\">
+        <span class=\"section-tag\">BAGIAN 1</span>
+        <h2>Wudu <span class=\"arabic-inline\">الوضوء</span></h2>
+        <p>Bersuci menggunakan air dengan tata cara yang telah disyariatkan.</p>
+      </div>
+
+      <!-- Pengertian + Dalil -->
+      <div class=\"grid-2 reveal\">
+        <div class=\"card\">
+          <div class=\"card-icon green\"><i class=\"fa-solid fa-book\"></i></div>
+          <h3>Pengertian</h3>
+          <p>
+            Secara bahasa, <em>wudu</em> (الوضوء) berarti bersih dan indah.
+            Menurut istilah syariat, wudu adalah membasuh dan mengusap anggota
+            tubuh tertentu dengan air suci yang mensucikan, disertai niat,
+            untuk menghilangkan hadats kecil.
+          </p>
+        </div>
+
+        <div class=\"card\">
+          <div class=\"card-icon green\"><i class=\"fa-solid fa-scroll\"></i></div>
+          <h3>Dalil Pensyariatan</h3>
+          <p class=\"arabic\">
+            يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُوا بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ
+          </p>
+          <p>
+            \"Wahai orang-orang yang beriman! Apabila kamu hendak mendirikan salat,
+            maka basuhlah wajahmu dan tanganmu sampai ke siku, dan sapulah kepalamu
+            dan (basuh) kakimu sampai ke mata kaki.\"
+          </p>
+          <small class=\"ref\">— QS. Al-Ma'idah: 6</small>
+        </div>
+      </div>
+
+      <!-- Keutamaan -->
+      <div class=\"card-wide reveal\">
+        <div class=\"card-icon green\"><i class=\"fa-solid fa-star\"></i></div>
+        <h3>Keutamaan Wudu</h3>
+        <ul class=\"check-list\">
+          <li>Menghapus dosa-dosa kecil bersama tetesan air wudu (HR. Muslim no. 244).</li>
+          <li>Menjadi tanda pengenal umat Nabi ﷺ pada Hari Kiamat — bercahaya pada anggota wudunya (HR. Bukhari & Muslim).</li>
+          <li>Mengangkat derajat dan menghapus kesalahan (HR. Muslim no. 251).</li>
+          <li>Setengah dari iman, sebagaimana sabda Nabi: <em>\"Bersuci itu sebagian dari iman.\"</em> (HR. Muslim no. 223).</li>
+        </ul>
+      </div>
+
+      <!-- Syarat & Rukun -->
+      <div class=\"grid-2 reveal\">
+        <div class=\"card\">
+          <div class=\"card-icon green\"><i class=\"fa-solid fa-list-check\"></i></div>
+          <h3>Syarat Wudu</h3>
+          <ol class=\"num-list\">
+            <li>Islam</li>
+            <li>Berakal (tamyiz)</li>
+            <li>Niat</li>
+            <li>Menggunakan air yang suci dan mensucikan</li>
+            <li>Tidak ada penghalang air ke kulit (cat, lilin, dll.)</li>
+            <li>Telah masuk waktu (bagi yang berhadats terus-menerus)</li>
+          </ol>
+        </div>
+
+        <div class=\"card\">
+          <div class=\"card-icon green\"><i class=\"fa-solid fa-mosque\"></i></div>
+          <h3>Rukun Wudu</h3>
+          <ol class=\"num-list\">
+            <li>Niat di dalam hati</li>
+            <li>Membasuh seluruh wajah</li>
+            <li>Membasuh kedua tangan sampai siku</li>
+            <li>Mengusap sebagian kepala</li>
+            <li>Membasuh kedua kaki sampai mata kaki</li>
+            <li>Tertib (berurutan)</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Sunnah -->
+      <div class=\"card-wide reveal\">
+        <div class=\"card-icon green\"><i class=\"fa-solid fa-heart\"></i></div>
+        <h3>Sunnah-sunnah Wudu</h3>
+        <div class=\"sunnah-grid\">
+          <span><i class=\"fa-solid fa-check\"></i> Membaca <em>basmalah</em></span>
+          <span><i class=\"fa-solid fa-check\"></i> Bersiwak</span>
+          <span><i class=\"fa-solid fa-check\"></i> Mencuci kedua telapak tangan 3x</span>
+          <span><i class=\"fa-solid fa-check\"></i> Berkumur-kumur (<em>madhmadhah</em>)</span>
+          <span><i class=\"fa-solid fa-check\"></i> Memasukkan air ke hidung (<em>istinsyaq</em>)</span>
+          <span><i class=\"fa-solid fa-check\"></i> Menyela-nyela jenggot</span>
+          <span><i class=\"fa-solid fa-check\"></i> Menyela-nyela jari</span>
+          <span><i class=\"fa-solid fa-check\"></i> Mengusap kedua telinga</span>
+          <span><i class=\"fa-solid fa-check\"></i> Mendahulukan anggota kanan</span>
+          <span><i class=\"fa-solid fa-check\"></i> Mengulangi basuhan hingga 3x</span>
+          <span><i class=\"fa-solid fa-check\"></i> Berdoa setelah wudu</span>
+          <span><i class=\"fa-solid fa-check\"></i> Salat sunnah dua rakaat setelahnya</span>
+        </div>
+      </div>
+
+      <!-- Tata Cara Step by Step -->
+      <div class=\"section-head sub-head reveal\">
+        <h3><i class=\"fa-solid fa-shoe-prints\"></i> Tata Cara Wudu Langkah demi Langkah</h3>
+      </div>
+
+      <div class=\"steps reveal\">
+        <div class=\"step\">
+          <div class=\"step-num\">1</div>
+          <h4>Niat</h4>
+          <p>Berniat dalam hati untuk menghilangkan hadats kecil karena Allah ﷻ.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">2</div>
+          <h4>Membaca Basmalah</h4>
+          <p>Mengucapkan <em>\"Bismillāh\"</em> sebelum memulai.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">3</div>
+          <h4>Membasuh Telapak Tangan</h4>
+          <p>Mencuci kedua telapak tangan sebanyak 3 kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">4</div>
+          <h4>Berkumur & Istinsyaq</h4>
+          <p>Berkumur dan memasukkan air ke hidung lalu mengeluarkannya, 3 kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">5</div>
+          <h4>Membasuh Wajah</h4>
+          <p>Membasuh seluruh wajah dari batas rambut hingga dagu, 3 kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">6</div>
+          <h4>Membasuh Tangan</h4>
+          <p>Membasuh kedua tangan hingga ke siku, dimulai dari kanan, 3 kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">7</div>
+          <h4>Mengusap Kepala & Telinga</h4>
+          <p>Mengusap kepala dari depan ke belakang lalu kembali, dilanjutkan mengusap kedua telinga.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">8</div>
+          <h4>Membasuh Kaki</h4>
+          <p>Membasuh kedua kaki sampai mata kaki, dimulai dari kanan, 3 kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">9</div>
+          <h4>Doa Setelah Wudu</h4>
+          <p>
+            <span class=\"arabic small\">أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Pembatal -->
+      <div class=\"card-wide danger reveal\">
+        <div class=\"card-icon red\"><i class=\"fa-solid fa-triangle-exclamation\"></i></div>
+        <h3>Hal-hal yang Membatalkan Wudu</h3>
+        <ul class=\"check-list danger-list\">
+          <li>Keluar sesuatu dari dua jalan (qubul dan dubur) — buang air, kentut, dsb.</li>
+          <li>Hilang akal — tidur nyenyak, pingsan, gila, mabuk.</li>
+          <li>Menyentuh kemaluan dengan telapak tangan tanpa penghalang.</li>
+          <li>Menyentuh kulit lawan jenis bukan mahram dengan syahwat (menurut sebagian ulama).</li>
+          <li>Memakan daging unta (HR. Muslim no. 360).</li>
+          <li>Murtad (keluar dari Islam) — semoga Allah melindungi kita.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TAYAMMUM SECTION ============ -->
+  <section id=\"tayammum\" class=\"section section-alt\">
+    <div class=\"container\">
+      <div class=\"section-head reveal\">
+        <span class=\"section-tag\">BAGIAN 2</span>
+        <h2>Tayammum <span class=\"arabic-inline\">التيمم</span></h2>
+        <p>Bersuci pengganti wudu/mandi ketika tidak ada air atau tidak mampu menggunakannya.</p>
+      </div>
+
+      <div class=\"grid-2 reveal\">
+        <div class=\"card\">
+          <div class=\"card-icon sand\"><i class=\"fa-solid fa-book\"></i></div>
+          <h3>Pengertian</h3>
+          <p>
+            Secara bahasa, <em>tayammum</em> (التيمم) berarti <strong>menyengaja</strong>.
+            Menurut syariat, tayammum adalah menyengaja (mengusap) wajah dan kedua
+            tangan menggunakan tanah/debu yang suci, dengan niat tertentu, sebagai
+            pengganti wudu atau mandi.
+          </p>
+        </div>
+
+        <div class=\"card\">
+          <div class=\"card-icon sand\"><i class=\"fa-solid fa-scroll\"></i></div>
+          <h3>Dalil Pensyariatan</h3>
+          <p class=\"arabic\">
+            ...فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا فَامْسَحُوا بِوُجُوهِكُمْ وَأَيْدِيكُمْ مِنْهُ
+          </p>
+          <p>
+            \"...lalu kamu tidak memperoleh air, maka bertayammumlah dengan debu
+            yang baik (suci); usaplah wajahmu dan tanganmu dengan debu itu.\"
+          </p>
+          <small class=\"ref\">— QS. Al-Ma'idah: 6</small>
+        </div>
+      </div>
+
+      <!-- Image strip -->
+      <div class=\"image-strip reveal\">
+        <img src=\"https://images.unsplash.com/photo-1564769625392-651b2c5f9a76?auto=format&fit=crop&w=1200&q=80\" alt=\"Padang pasir, ilustrasi debu suci untuk tayammum\" loading=\"lazy\" />
+      </div>
+
+      <!-- Keutamaan / Kemudahan -->
+      <div class=\"card-wide reveal\">
+        <div class=\"card-icon sand\"><i class=\"fa-solid fa-star\"></i></div>
+        <h3>Keutamaan & Hikmah Tayammum</h3>
+        <ul class=\"check-list\">
+          <li>Bukti kemudahan syariat Islam yang tidak memberatkan hambanya.</li>
+          <li>Kekhususan umat Nabi Muhammad ﷺ — <em>\"Telah dijadikan bumi seluruhnya bagiku sebagai masjid dan suci.\"</em> (HR. Bukhari no. 335).</li>
+          <li>Menggantikan kedudukan wudu dan mandi ketika udzur.</li>
+          <li>Mengajarkan bahwa inti bersuci adalah ketaatan, bukan sekadar materi air.</li>
+        </ul>
+      </div>
+
+      <!-- Syarat & Rukun -->
+      <div class=\"grid-2 reveal\">
+        <div class=\"card\">
+          <div class=\"card-icon sand\"><i class=\"fa-solid fa-list-check\"></i></div>
+          <h3>Syarat Tayammum</h3>
+          <ol class=\"num-list\">
+            <li>Telah masuk waktu salat</li>
+            <li>Tidak ada air, atau ada tetapi tidak mampu menggunakannya (sakit, dingin parah, dll.)</li>
+            <li>Menggunakan tanah/debu yang suci</li>
+            <li>Menghilangkan najis terlebih dahulu</li>
+            <li>Berusaha mencari air terlebih dahulu sebelum bertayammum</li>
+          </ol>
+        </div>
+
+        <div class=\"card\">
+          <div class=\"card-icon sand\"><i class=\"fa-solid fa-mosque\"></i></div>
+          <h3>Rukun Tayammum</h3>
+          <ol class=\"num-list\">
+            <li>Niat di dalam hati</li>
+            <li>Mengusap wajah</li>
+            <li>Mengusap kedua tangan hingga pergelangan</li>
+            <li>Tertib (berurutan)</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Sunnah Tayammum -->
+      <div class=\"card-wide reveal\">
+        <div class=\"card-icon sand\"><i class=\"fa-solid fa-heart\"></i></div>
+        <h3>Sunnah-sunnah Tayammum</h3>
+        <div class=\"sunnah-grid\">
+          <span><i class=\"fa-solid fa-check\"></i> Membaca basmalah</span>
+          <span><i class=\"fa-solid fa-check\"></i> Menghadap kiblat</span>
+          <span><i class=\"fa-solid fa-check\"></i> Mendahulukan tangan kanan</span>
+          <span><i class=\"fa-solid fa-check\"></i> Meniup debu yang berlebih</span>
+          <span><i class=\"fa-solid fa-check\"></i> Berdoa setelahnya (sama seperti wudu)</span>
+          <span><i class=\"fa-solid fa-check\"></i> Tidak berbicara hal yang tidak perlu</span>
+        </div>
+      </div>
+
+      <!-- Tata Cara -->
+      <div class=\"section-head sub-head reveal\">
+        <h3><i class=\"fa-solid fa-shoe-prints\"></i> Tata Cara Tayammum Langkah demi Langkah</h3>
+      </div>
+
+      <div class=\"steps steps-sand reveal\">
+        <div class=\"step\">
+          <div class=\"step-num\">1</div>
+          <h4>Niat</h4>
+          <p>Berniat dalam hati untuk bertayammum agar diperbolehkan salat.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">2</div>
+          <h4>Membaca Basmalah</h4>
+          <p>Mengucapkan <em>\"Bismillāh\"</em> sebelum memulai.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">3</div>
+          <h4>Tepukkan Tangan</h4>
+          <p>Menepukkan kedua telapak tangan ke permukaan tanah/debu yang suci satu kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">4</div>
+          <h4>Tiup Debu</h4>
+          <p>Meniup kedua telapak tangan jika debu berlebih (sesuai HR. Bukhari no. 347).</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">5</div>
+          <h4>Usap Wajah</h4>
+          <p>Mengusap seluruh wajah dengan kedua telapak tangan satu kali.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">6</div>
+          <h4>Usap Kedua Tangan</h4>
+          <p>Mengusap punggung tangan kanan dengan telapak kiri, lalu sebaliknya, sampai pergelangan tangan.</p>
+        </div>
+        <div class=\"step\">
+          <div class=\"step-num\">7</div>
+          <h4>Doa Penutup</h4>
+          <p>Membaca doa yang sama seperti setelah wudu.</p>
+        </div>
+      </div>
+
+      <!-- Pembatal -->
+      <div class=\"card-wide danger reveal\">
+        <div class=\"card-icon red\"><i class=\"fa-solid fa-triangle-exclamation\"></i></div>
+        <h3>Hal-hal yang Membatalkan Tayammum</h3>
+        <ul class=\"check-list danger-list\">
+          <li>Semua hal yang membatalkan wudu juga membatalkan tayammum.</li>
+          <li>Menemukan air sebelum salat (bagi yang bertayammum karena tidak ada air).</li>
+          <li>Hilangnya udzur — misal sembuh dari sakit yang menghalangi pemakaian air.</li>
+          <li>Murtad (keluar dari Islam).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPARISON ============ -->
+  <section id=\"comparison\" class=\"section\">
+    <div class=\"container\">
+      <div class=\"section-head reveal\">
+        <span class=\"section-tag\">PERBANDINGAN</span>
+        <h2>Wudu vs Tayammum</h2>
+        <p>Ringkasan perbedaan dan persamaan kedua cara bersuci.</p>
+      </div>
+
+      <div class=\"table-wrap reveal\">
+        <table class=\"compare-table\">
+          <thead>
+            <tr>
+              <th>Aspek</th>
+              <th><i class=\"fa-solid fa-droplet\"></i> Wudu</th>
+              <th><i class=\"fa-solid fa-mountain-sun\"></i> Tayammum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Media Bersuci</td>
+              <td>Air suci dan mensucikan</td>
+              <td>Tanah / debu yang suci</td>
+            </tr>
+            <tr>
+              <td>Kondisi</td>
+              <td>Saat air tersedia dan mampu digunakan</td>
+              <td>Saat tidak ada air atau ada udzur (sakit, dingin parah)</td>
+            </tr>
+            <tr>
+              <td>Jumlah Rukun</td>
+              <td>6 rukun</td>
+              <td>4 rukun</td>
+            </tr>
+            <tr>
+              <td>Anggota Yang Dibasuh/Diusap</td>
+              <td>Wajah, tangan, kepala, kaki</td>
+              <td>Wajah dan kedua tangan saja</td>
+            </tr>
+            <tr>
+              <td>Pengulangan</td>
+              <td>Boleh diulang 3 kali (sunnah)</td>
+              <td>Cukup satu kali usapan</td>
+            </tr>
+            <tr>
+              <td>Masa Berlaku</td>
+              <td>Selama belum batal</td>
+              <td>Selama belum batal & belum menemukan air</td>
+            </tr>
+            <tr>
+              <td>Dalil Utama</td>
+              <td>QS. Al-Ma'idah: 6 (bagian awal)</td>
+              <td>QS. Al-Ma'idah: 6 (bagian akhir)</td>
+            </tr>
+            <tr>
+              <td>Niat</td>
+              <td>Wajib</td>
+              <td>Wajib</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id=\"faq\" class=\"section section-alt\">
+    <div class=\"container\">
+      <div class=\"section-head reveal\">
+        <span class=\"section-tag\">FAQ</span>
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <p>Klik setiap pertanyaan untuk melihat jawabannya.</p>
+      </div>
+
+      <div class=\"faq-list reveal\">
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Apakah boleh bertayammum jika ada air tetapi sedikit sekali?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Jika air hanya cukup untuk minum atau kebutuhan vital, maka diperbolehkan bertayammum.
+            Namun jika air mencukupi untuk wudu walau sedikit, wajib digunakan terlebih dahulu sebelum bertayammum.</p>
+          </div>
+        </div>
+
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Apakah satu kali tayammum boleh untuk beberapa salat?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Menurut pendapat yang kuat (jumhur ulama), satu kali tayammum hanya berlaku untuk satu salat fardhu.
+            Namun boleh digunakan untuk salat-salat sunnah setelahnya selama belum batal.</p>
+          </div>
+        </div>
+
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Apakah wudu harus berurutan (tertib)?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Ya, tertib termasuk rukun wudu menurut mazhab Syafi'i dan Hanbali, berdasarkan urutan yang
+            disebut dalam QS. Al-Ma'idah: 6. Jika tidak tertib, wudu tidak sah.</p>
+          </div>
+        </div>
+
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Apakah tidur ringan membatalkan wudu?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Tidur ringan (mengantuk) di mana kesadaran masih ada <strong>tidak membatalkan wudu</strong>.
+            Yang membatalkan adalah tidur nyenyak hingga hilangnya kesadaran (HR. Abu Dawud no. 200).</p>
+          </div>
+        </div>
+
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Bolehkah bertayammum dengan tembok atau pasir?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Boleh, selama benda tersebut berasal dari permukaan bumi dan suci, seperti pasir, batu, tanah, atau dinding tanah/semen yang berdebu.
+            Yang utama adalah <em>sha'idan thayyiba</em> (permukaan bumi yang suci).</p>
+          </div>
+        </div>
+
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Apakah perlu mengulang wudu setiap kali salat?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Tidak wajib, selama wudu belum batal. Namun memperbarui wudu setiap salat adalah sunnah dan mendapat pahala besar.</p>
+          </div>
+        </div>
+
+        <div class=\"faq-item\">
+          <button class=\"faq-q\" aria-expanded=\"false\">
+            <span>Apakah cat kuku menghalangi sahnya wudu?</span>
+            <i class=\"fa-solid fa-plus\"></i>
+          </button>
+          <div class=\"faq-a\">
+            <p>Ya. Cat kuku membentuk lapisan yang menghalangi air sampai ke kulit/kuku, sehingga wudu tidak sah.
+            Harus dibersihkan terlebih dahulu sebelum berwudu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class=\"footer\">
+    <div class=\"container footer-grid\">
+      <div>
+        <a href=\"#hero\" class=\"brand\">
+          <span class=\"brand-icon\"><i class=\"fa-solid fa-droplet\"></i></span>
+          <span class=\"brand-text\">Thaharah<span class=\"dot\">.</span></span>
+        </a>
+        <p class=\"footer-desc\">
+          Panduan edukatif tentang bersuci dalam Islam — disusun berdasarkan
+          Al-Qur'an dan Hadits Sahih.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href=\"#hero\">Beranda</a></li>
+          <li><a href=\"#wudu\">Wudu</a></li>
+          <li><a href=\"#tayammum\">Tayammum</a></li>
+          <li><a href=\"#comparison\">Perbandingan</a></li>
+          <li><a href=\"#faq\">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Referensi</h4>
+        <ul>
+          <li>Al-Qur'an Surah Al-Ma'idah: 6</li>
+          <li>Sahih al-Bukhari</li>
+          <li>Sahih Muslim</li>
+          <li>Sunan Abu Dawud</li>
+          <li>Kitab Fiqih Empat Mazhab</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Tentang</h4>
+        <p class=\"small-muted\">
+          Website ini dibuat untuk tujuan edukasi. Semoga Allah ﷻ menerima
+          amal kita dan menjadikannya bermanfaat bagi umat.
+        </p>
+        <p class=\"arabic small\">جزاكم الله خيرا</p>
+      </div>
+    </div>
+
+    <div class=\"footer-bottom\">
+      <p>&copy; <span id=\"year\"></span> Thaharah — Panduan Wudu & Tayammum. Dibuat dengan <i class=\"fa-solid fa-heart\" style=\"color:#e74c3c\"></i> untuk pembelajaran.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id=\"backToTop\" class=\"back-to-top\" aria-label=\"Kembali ke atas\">
+    <i class=\"fa-solid fa-arrow-up\"></i>
+  </button>
+
+  <script src=\"index.js\"></script>
+</body>
+</html>
+"
