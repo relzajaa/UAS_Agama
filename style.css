@@ -1,4 +1,4 @@
-"/* ============================================
+/* ============================================
    THAHARAH — Wudu & Tayammum
    Modern Islamic Educational Landing Page
    ============================================ */
@@ -384,9 +384,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: var(--shadow-sm);
   transition: transform .3s ease, box-shadow .3s ease;
 }
-.card:hover, .card-wide:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+.card:hover,
+.card-wide:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-lg);
 }
 .card-wide { margin-bottom: 24px; }
 
@@ -763,6 +764,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .floating-card i { width: 36px; height: 36px; }
   .card-1 { left: 8px; top: 8px; }
   .card-2 { right: 8px; bottom: 8px; }
+  #searchInput {
+  padding:15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -771,4 +775,161 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .btn { padding: 12px 18px; font-size: 0.9rem; }
   .compare-table th, .compare-table td { padding: 12px 14px; font-size: 0.9rem; }
 }
-"
+
+/* ============================================
+   PROGRESS BAR
+   ============================================ */
+
+#progressBar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:0%;
+  height:4px;
+  background:linear-gradient(
+    90deg,
+    var(--green-600),
+    var(--gold)
+  );
+  z-index:9999;
+}
+
+/* ============================================
+   THEME TOGGLE
+   ============================================ */
+
+#themeToggle{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:var(--green-800);
+  transition:.3s;
+}
+
+#themeToggle:hover{
+  background:var(--green-100);
+}
+
+/* ============================================
+   SEARCH BOX
+   ============================================ */
+
+.search-section{
+  padding:20px 0 40px;
+}
+
+.search-box{
+  max-width:700px;
+  margin:auto;
+}
+
+#searchInput{
+  width:100%;
+  padding:18px 22px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  font-size:1rem;
+  outline:none;
+  transition:.3s;
+  box-shadow:var(--shadow-sm);
+}
+
+#searchInput:focus{
+  border-color:var(--green-600);
+  box-shadow:0 0 0 4px rgba(31,138,90,.15);
+}
+
+/* ============================================
+   QUIZ
+   ============================================ */
+
+#quiz .card-wide{
+  text-align:center;
+}
+
+#quiz h3{
+  margin-bottom:24px;
+}
+
+#quizResult{
+  font-size:1.1rem;
+  color:var(--green-700);
+}
+
+/* ============================================
+   LOADER
+   ============================================ */
+
+#loader{
+  position:fixed;
+  inset:0;
+  background:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:10000;
+  transition:.5s;
+}
+
+#loader.hidden{
+  opacity:0;
+  visibility:hidden;
+}
+
+.loader-content{
+  text-align:center;
+}
+
+.loader-content i{
+  font-size:3rem;
+  color:var(--green-700);
+  margin-bottom:12px;
+}
+
+.loader-content h2{
+  color:var(--green-800);
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+body.dark{
+  --bg:#111827;
+  --bg-alt:#1f2937;
+  --ink:#f3f4f6;
+  --muted:#d1d5db;
+  --line:#374151;
+}
+
+body.dark{
+  background:var(--bg);
+  color:var(--ink);
+}
+
+body.dark .card,
+body.dark .card-wide,
+body.dark .faq-item,
+body.dark .step,
+body.dark .table-wrap{
+  background:#1f2937;
+  border-color:#374151;
+}
+
+body.dark .navbar{
+  background:rgba(17,24,39,.95);
+}
+
+body.dark .faq-q{
+  color:white;
+}
+
+body.dark .compare-table td{
+  color:white;
+}
+
+body.dark .footer{
+  background:#030712;
+}

@@ -1,4 +1,4 @@
-"/* ============================================
+/* ============================================
    THAHARAH — Wudu & Tayammum
    Interactivity: Navbar, Mobile Menu, FAQ,
    Scroll reveal, Active link, Back to top
@@ -21,6 +21,12 @@
     initFAQ();
     initRevealOnScroll();
     initBackToTop();
+
+    initReadingProgress();
+    initTheme();
+    initSearch();
+    initQuiz();
+    initLoader();
   }
 
   // -------- Footer Year --------
@@ -88,27 +94,55 @@
   }
 
   // -------- Accordion FAQ --------
-  function initFAQ() {
-    const items = $$('.faq-item');
+    function initFAQ() {
+    const items =
+      $$(".faq-item");
     items.forEach(item => {
-      const btn = $('.faq-q', item);
+      const btn =
+        $(".faq-q", item);
       if (!btn) return;
-      btn.addEventListener('click', () => {
-        const isOpen = item.classList.contains('open');
+      btn.addEventListener(
+        "click",
+        () => {
+          const isOpen =
+            item.classList.contains(
+              "open"
+            );
 
-        // Close all
-        items.forEach(i => {
-          i.classList.remove('open');
-          const b = $('.faq-q', i);
-          if (b) b.setAttribute('aria-expanded', 'false');
-        });
+          if (isOpen) {
+            item.classList.remove(
+              "open"
+            );
+            btn.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+            return;
+          }
 
-        // Toggle current
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
+          items.forEach(i => {
+            i.classList.remove(
+              "open"
+            );
+            const b =
+              $(".faq-q", i);
+            if (b) {
+              b.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+            }
+          });
+
+          item.classList.add(
+            "open"
+          );
+          btn.setAttribute(
+            "aria-expanded",
+            "true"
+          );
         }
-      });
+      );
     });
   }
 
@@ -145,5 +179,119 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  /* ============================================
+     READING PROGRESS
+  ============================================ */
+
+  function initReadingProgress() {
+    const bar = document.getElementById("progressBar");
+    if (!bar) return;
+    window.addEventListener("scroll", () => {
+      const scrollTop =
+        document.documentElement.scrollTop;
+      const docHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const progress =
+        (scrollTop / docHeight) * 100;
+      bar.style.width = progress + "%";
+    });
+  }
+
+  /* ============================================
+    DARK MODE
+  ============================================ */
+
+  function initTheme() {
+    const toggle =
+      document.getElementById("themeToggle");
+    if (!toggle) return;
+    if (
+      localStorage.getItem("theme")
+      === "dark"
+    ) {
+      document.body.classList.add("dark");
+    }
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark")
+          ? "dark"
+          : "light"
+      );
+    });
+  }
+
+  /* ============================================
+    SEARCH
+  ============================================ */
+
+  function initSearch() {
+    const input =
+      document.getElementById("searchInput");
+    if (!input) return;
+    input.addEventListener("keyup", () => {
+      const keyword =
+        input.value.toLowerCase();
+      document
+        .querySelectorAll(
+          ".card, .card-wide, .step, .faq-item"
+        )
+        .forEach((item) => {
+          const text =
+            item.innerText.toLowerCase();
+          item.style.display =
+            text.includes(keyword)
+              ? ""
+              : "none";
+        });
+    });
+  }
+
+  /* ============================================
+    QUIZ
+  ============================================ */
+
+  function initQuiz() {
+    const result =
+      document.getElementById("quizResult");
+    if (!result) return;
+    document
+      .querySelectorAll(".quiz-btn")
+      .forEach(btn => {
+        btn.addEventListener(
+          "click",
+          () => {
+            const correct =
+              btn.dataset.correct === "true";
+            result.textContent =
+              correct
+              ? "✅ Jawaban Benar!"
+              : "❌ Jawaban Salah!";
+          }
+        );
+      });
+  }
+
+  /* ============================================
+    LOADER
+  ============================================ */
+
+  function initLoader() {
+    const loader =
+      document.getElementById("loader");
+    if (!loader) return;
+    window.addEventListener(
+      "load",
+      () => {
+        setTimeout(() => {
+          loader.classList.add(
+            "hidden"
+          );
+        }, 500);
+      }
+    );
+  }
 })();
-"
