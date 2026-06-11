@@ -1,5 +1,5 @@
 /* ============================================
-   THAHARAH — Wudu & Tayammum
+   THAHARAH — Wudhu & Tayamum
    Interactivity: Navbar, Mobile Menu, FAQ,
    Scroll reveal, Active link, Back to top
    ============================================ */
@@ -21,11 +21,8 @@
     initFAQ();
     initRevealOnScroll();
     initBackToTop();
-
     initReadingProgress();
     initTheme();
-    initSearch();
-    initQuiz();
     initLoader();
   }
 
@@ -206,73 +203,56 @@
   function initTheme() {
     const toggle =
       document.getElementById("themeToggle");
+
     if (!toggle) return;
+
+    const icon =
+      toggle.querySelector("i");
+
+    const updateIcon = () => {
+      if (
+        document.body.classList.contains(
+          "dark"
+        )
+      ) {
+        icon.className =
+          "fa-solid fa-sun";
+      } else {
+        icon.className =
+          "fa-solid fa-moon";
+      }
+    };
+
     if (
       localStorage.getItem("theme")
       === "dark"
     ) {
-      document.body.classList.add("dark");
-    }
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      localStorage.setItem(
-        "theme",
-        document.body.classList.contains("dark")
-          ? "dark"
-          : "light"
+      document.body.classList.add(
+        "dark"
       );
-    });
-  }
+    }
 
-  /* ============================================
-    SEARCH
-  ============================================ */
+    updateIcon();
 
-  function initSearch() {
-    const input =
-      document.getElementById("searchInput");
-    if (!input) return;
-    input.addEventListener("keyup", () => {
-      const keyword =
-        input.value.toLowerCase();
-      document
-        .querySelectorAll(
-          ".card, .card-wide, .step, .faq-item"
-        )
-        .forEach((item) => {
-          const text =
-            item.innerText.toLowerCase();
-          item.style.display =
-            text.includes(keyword)
-              ? ""
-              : "none";
-        });
-    });
-  }
-
-  /* ============================================
-    QUIZ
-  ============================================ */
-
-  function initQuiz() {
-    const result =
-      document.getElementById("quizResult");
-    if (!result) return;
-    document
-      .querySelectorAll(".quiz-btn")
-      .forEach(btn => {
-        btn.addEventListener(
-          "click",
-          () => {
-            const correct =
-              btn.dataset.correct === "true";
-            result.textContent =
-              correct
-              ? "✅ Jawaban Benar!"
-              : "❌ Jawaban Salah!";
-          }
+    toggle.addEventListener(
+      "click",
+      () => {
+        document.body.classList.toggle(
+          "dark"
         );
-      });
+
+        localStorage.setItem(
+          "theme",
+          document.body.classList.contains(
+            "dark"
+          )
+            ? "dark"
+            : "light"
+        );
+
+        updateIcon();
+      }
+    );
   }
 
   /* ============================================
